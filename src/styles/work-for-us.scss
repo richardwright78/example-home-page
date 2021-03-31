@@ -1,6 +1,6 @@
 #work-for-us {
-    background-image: url('../images/woods.jpg');
-    background-position: bottom;
+    background-image: url('../images/woods2.jpg');
+    background-position: center;
     background-size: cover;
     height: 40vh;
     display: flex;
@@ -16,6 +16,7 @@
         background: $bgWarm;
         margin-left: 1.5rem;
         display: inline-block;
+        text-align: center;
     }
 }
 
@@ -24,6 +25,10 @@
     border: 0.5rem solid white;
     display: flex;
     align-items: center;
+    justify-content: center;
+    div {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 935px) {
@@ -43,13 +48,13 @@
         font-size: 2rem;
         a {
             margin-top: 1rem;
+            margin-left: 0;
             font-size: 1.25rem;
         }
     }
 
     .work-for-us-prompt {
-        text-align: center;
-        display: block;
+        flex-direction: column;
         border: 0.3rem solid white;
     }
 }

@@ -8,9 +8,11 @@ import { LearnMoreTile } from './components/learn-more-tile';
 function App() {
   return (
     <>
-      <div className="hero container">
-        <h1 id="main-heading">Empowering local communities</h1>
-      </div>
+      <header>
+        <div className="hero container">
+          <h1 id="main-heading">Empowering local communities</h1>
+        </div>
+      </header>
       <section className="welcome container">
         <div className="welcome-text">
           Welcome to the rural community council of Essex. We are an independant charity helping people and communities throughout rural Essex build a sustainable future.
