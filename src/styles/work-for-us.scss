@@ -1,0 +1,61 @@
+#work-for-us {
+    background-image: url('../images/woods.jpg');
+    background-position: bottom;
+    background-size: cover;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    a {
+        font-size: 1.5rem;
+        color: white;
+        padding: 1rem;
+        background: $bgWarm;
+        margin-left: 1.5rem;
+        display: inline-block;
+    }
+}
+
+.work-for-us-prompt {
+    padding: 2rem;
+    border: 0.5rem solid white;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 935px) {
+    #work-for-us {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    #work-for-us {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 745px) {
+    #work-for-us {
+        font-size: 2rem;
+        a {
+            margin-top: 1rem;
+            font-size: 1.25rem;
+        }
+    }
+
+    .work-for-us-prompt {
+        text-align: center;
+        display: block;
+        border: 0.3rem solid white;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #work-for-us {
+        font-size: 1.75rem;
+    }
+}

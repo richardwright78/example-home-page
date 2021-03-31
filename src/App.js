@@ -22,7 +22,6 @@ function App() {
         <SecondaryNavTile text="Energy and fuel" icon={faLightbulb} />
         <SecondaryNavTile text="Rural partnerships" icon={faPagelines} />
       </nav>
-      {/* <div className="container"> */}
         <section id="learn-more">
           <LearnMoreTile 
             text="RCCE supports ACRE National Village Hall Safeguarding Week" 
@@ -41,7 +40,14 @@ function App() {
             className="survey" 
           />
         </section>
-      {/* </div> */}
+        <section id="work-for-us" className="container">
+          <div className="work-for-us-prompt">
+            <div>
+              <span>Come and work for us</span>
+            </div>
+            <a href="#">Click here</a>
+          </div>
+        </section>
     </>
   );
 }
