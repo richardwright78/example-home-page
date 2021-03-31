@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import './learn-more.scss';
+
+$pageSpacer: 3rem;
+$pageSpacerMobile: 1.5rem;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding-left: $pageSpacer;
+  padding-right: $pageSpacer;
+}
+
+.hero {
+  height: 50vh;
+  color: white;
+  background: url('../images/hero3.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#main-nav {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+}
+
+#header {
+  width: 100%;
+  background-color: transparent;
+  z-index: 100;
+}
+
+#main-heading {
+  position: absolute;
+  bottom: $pageSpacer;
+  letter-spacing: 0.05rem;
+  animation: moveInRight 0.5s ease-out;
+}
+
+#logo {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.welcome {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background: $bgWarm;
+  color: white;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.welcome-text {
+  animation: moveInLeft 0.5s ease-out;
+}
+
+#secondary-nav {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.secondary-nav-tile {
+  width: 20%;
+  padding: 1rem;
+  text-align: center;
+  flex-grow: 1;
+  a{
+    color: black;
+    display: flex;
+    height: 10rem;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  span {
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  svg {
+    font-size: 6rem;
+  }
+  div {
+    padding-top: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .secondary-nav-tile {
+    span {
+      font-size: 1.2rem;
+    }
+    a {
+      height: 10rem;
+    }
+    svg {
+      font-size: 5.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  #main-heading {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #main-heading {
+    font-size: 3rem;
+  }
+
+  .welcome {
+    font-size: 1.25rem;
+  }
+
+  .secondary-nav-tile {
+    a {
+      height: 8rem;
+    }
+    span {
+      font-size: 1.1rem;
+    }
+    svg {
+      font-size: 5rem;
+    }
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+  .secondary-nav-tile {
+    width: 50%;
+    span {
+      font-size: 1.25rem;
+    }
+    svg {
+      font-size: 5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 570px) {
+  #main-heading {
+    font-size: 2.9rem;
+  }
+
+  .secondary-nav-tile {
+    a {
+      height: 8.5rem;
+    }
+    span {
+      font-size: 1.25rem;
+    }
+    svg {
+      font-size: 5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #main-heading {
+    font-size: 2.6rem;
+  }
+
+  #logo {
+    font-size: 1.5rem;
+  }
+
+  .welcome {
+    font-size: 1.25rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .secondary-nav-tile {
+    a {
+      height: 8rem;
+    }
+    span {
+      font-size: 1.25rem;
+    }
+    svg {
+      font-size: 4.5rem;
+    }
+  }
+
+  .container {
+    padding-left: $pageSpacerMobile;
+    padding-right: $pageSpacerMobile;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .secondary-nav-tile {
+    a {
+      height: 9rem;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #main-heading {
+    font-size: 2.3rem;
+  }
+
+  #logo {
+    font-size: 1.5rem;
+  }
+
+  .secondary-nav-tile {
+    a {
+      height: 7.5rem;
+    }
+    span {
+      font-size: 1.1rem;
+    }
+    svg {
+      font-size: 4.25rem;
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .secondary-nav-tile {
+    svg {
+      font-size: 4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #main-heading {
+    font-size: 2rem;
+  }
+
+  .secondary-nav-tile {
+    a {
+      height: 7.75rem;
+    }
+    span {
+      font-size: 1.1rem;
+    }
+    svg {
+      font-size: 4rem;
+    }
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+      opacity: 0;
+      transform: translateX(-75px);
+  }
+  80% {
+      transform: translateX(10px);
+  }
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+      opacity: 0;
+      transform: translateX(75px);
+  }
+  80% {
+      transform: translateX(-10px);
+  }
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+}

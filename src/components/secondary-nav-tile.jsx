@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const SecondaryNavTile = ({ text, icon }) => (
-  <div className="secondary-nav-link">
+  <div className="secondary-nav-tile">
     <a href="#" className="secondary-nav-anchor">
       <span className="secondary-nav-text">
         { text }
